@@ -1,0 +1,58 @@
+/* ========================================
+    GENERAL STYLES
+  ========================================
+  */
+$grey: #333333;
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: inherit;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-kerning: auto;
+    font-kerning: auto;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: white;
+    color: $grey;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin: 0 0 1rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* fix for browsers that lack styling support for main
+*/
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    color: $grey;
+}

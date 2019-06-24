@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main class="main">
+        <h1 id="title">Survey Form</h1>
+
+        <div class="form-outer">
+            <p id="description" class="description">Let us know about your personal hygiene</p>
+        <form action="" class="survey" id="survey-form">
+            <div class="survey__field">
+                <label for="name" id="name-label" class="left_col">Name:</label>
+                <input type="text" id="name" class="name right_col" placeholder="Enter your name" required>
+            </div>
+
+            <div class="survey__field">
+                <label for="email" id="email-label" class="left_col">Email:</label>
+                <input type="email" id="email" class="email right_col" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="survey__field">
+                <label for="number" id="number-label" class="left_col">Age:</label>
+                <input type="number" min="1" max="120" id="number" name="age" class="right_col" placeholder="Age" required>
+            </div>
+            <div class="survey__field">
+                <label for="dropdown" class="left_col">Which option best describes your current role</label>
+                <select id="dropdown" class="dropdown right_col">
+                    <option value="student">Student</option>
+                    <option value="full time job">Full Time Job</option>
+                    <option value="part time job">Part Time Job</option>
+                    <option value="prefer not to say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="survey__field">
+                <label for="radio" class="left_col">How often do you wash your hands before eating food</label>
+                <ul class="radio__options more_options right_col">
+                    <li>
+                        <input type="radio" id="always" name="hygiene" value="always">
+                        <label for="always">Always</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="frequently" name="hygiene" value="frequently">
+                        <label for="frequently">Frequently</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="sometimes" name="hygiene" value="sometimes">
+                        <label for="sometimes">Someone</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="never" name="hygiene" value="never">
+                        <label for="never">never</label>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="survey__field">
+                <label for="radio" class="left_col">How often do you use soap to wash your hands</label>
+                <ul class="radio__options more_options right_col">
+                    <li>
+                        <input type="radio" id="always" name="hygiene" value="always">
+                        <label for="always">Always</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="frequently" name="hygiene" value="frequently">
+                        <label for="frequently">Frequently</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="sometimes" name="hygiene" value="sometimes">
+                        <label for="sometimes">Someone</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="never" name="hygiene" value="never">
+                        <label for="never">never</label>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="survey__field">
+                <label for="radio" class="left_col">How many times do you brush your teeth</label>
+                <ul class="radio__options more_options right_col">
+                    <li>
+                        <input type="radio" id="twice" name="hygiene" value="once or twice a day">
+                        <label for="twice">Once or twice a day</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="three" name="hygiene" value="three or four times a day">
+                        <label for="three">Three or four times a day</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="five" name="hygiene" value="five">
+                        <label for="five">5 or more times a day</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="survey__field">
+                <label for="checkbox" class="left_col">What Deodorant/Antiperspirants do you use?</label>
+                <ul class="checkbox__options more_options right_col">
+                    <li>
+                        <input type="checkbox" id="dove" name="deoderants" value="dove">
+                        <label for="dove">Dove</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="gillette" name="deoderants" value="gillette">
+                        <label for="gillette">Gillette</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="axe" name="deoderants" value="axe">
+                        <label for="axe">Axe</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="sure" name="deoderants" value="sure">
+                        <label for="sure">Sure</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="degree" name="deoderants" value="degree">
+                        <label for="degree">Degree</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="vichy" name="deoderants" value="vichy">
+                        <label for="vichy">Vichy</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="perspirex" name="deoderants" value="perspirex">
+                        <label for="perspirex">Perspirex</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="survey__field">
+                <label for="comment" class="left_col">Any Comments or Suggestions</label>
+                <textarea class="comment right_col" id="comment">
+                </textarea>
+            </div>
+            <div class="survey__button">
+                <button id="submit" type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
