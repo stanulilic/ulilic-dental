@@ -1,0 +1,40 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: inherit;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-kerning: auto;
+    font-kerning: auto;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* fix for browsers that lack styling support for main
+*/
+main {
+    display: block;
+}
+
+/* BEM SASS 
+BEM with SASS. I'll split my SCSS files into several folders like settings (contains _variables.scss, _mixins.scss etc), vendor (_grid.scss, _normalize.scss), components (_forms.scss, _events.scss)... blah, blah, then I'll import them into a main app.scss which is compiled to app.css. So, let's say I have a component for listing events, I'll include the main block, then use & to nest each element inside that block (if it makes sense):*/
+.events {
+    &__item {
+      // styles here
+    }
+
+     &__description {
+         // styling here
+     } }   

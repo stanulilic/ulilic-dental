@@ -1,7 +1,7 @@
 {
-  "name": "luxelo",
+  "name": "starter",
   "version": "1.0.0",
-  "description": "Build tool for luxelo hotel website",
+  "description": "Build tool for starter",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
