@@ -4,17 +4,12 @@
   ========================================
   */
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background: white;
-    color: $grey;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: $base_size;
+    line-height: 1.6;
+    color: $gray_base;
 }
 
-h1 {
-    font-size: 2.5rem;
-    line-height: 1.4;
-}
 
 h1,
 h2,
@@ -22,7 +17,29 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-weight: 700;
-    color: $grey;
+    color: $gray_darker;
+    line-height: 1;
+}
+%heading-lineheight {
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: $font-size-h1-small;
+    @extend %heading-lineheight;
+}
+
+h2 {
+    font-size: $font-size-h2-small;
+    @extend %heading-lineheight;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+.subheading {
+    font-size: $sub-heading;
 }

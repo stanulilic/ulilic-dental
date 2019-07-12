@@ -1,0 +1,51 @@
+/* ========================================
+     Contactinfo - top_header
+  ========================================
+  */
+
+.contactinfo {
+    font-size: $base-size-small;
+    border-bottom: 1px solid $gray-light;
+
+    &__icon{
+        vertical-align: middle;
+        fill: $brand_color_lighter;
+        margin-right: $spacing_level-1 - 2;
+    }
+
+    &__wrapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    .contactinfo {
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__wrapper {
+            display: block;
+        }
+
+        &__phone {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .contactinfo {
+        &__wrapper {
+            display: flex;
+        }
+
+        &__mail {
+            margin-right: $base_spacing;
+        }
+        &__phone {
+            display: block;
+        }
+    }
+}
