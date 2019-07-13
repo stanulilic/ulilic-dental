@@ -1,0 +1,68 @@
+
+/* ========================================
+   Services SECTION
+  ========================================
+  */
+
+  .services {
+      padding: 4rem 0;
+
+      header {
+          text-align: center;
+          margin-bottom: 2rem;
+      }
+
+      &__container {
+          display: flex;
+          flex-wrap: wrap;
+      }
+      &__col {
+          margin-bottom: 3rem;
+         flex: 1 200px; 
+         margin-right: $base_spacing;
+      }
+
+      &__col img {
+          border-top-left-radius: 30px;
+          border-top-right-radius: 30px;
+      }
+  }
+
+  @media screen and (min-width: 928px) {
+      .services {
+          &__col {
+              flex: 1 300px;
+          }
+      }
+  }
+
+  @media screen and (min-width: 1008px) {
+      .services {
+          .col-1 img {
+          border-top-right-radius: 0;
+          }
+          .col-2  img{
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          }
+
+          .col-3 img {
+          border-top-left-radius: 0;
+          }
+
+          .col-1-bottom img{
+              border-bottom-left-radius: 30px;
+          }
+
+          .col-3-bottom img{
+              border-bottom-right-radius: 30px;
+          }
+
+          .col-bottom img {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          }
+
+
+      }
+  }

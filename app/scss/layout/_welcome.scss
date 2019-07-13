@@ -12,8 +12,12 @@
           flex-direction: column-reverse;
       }
 
+      &__content h2 {
+          max-width: 350px;
+      }
+
       &__content .subheading {
-          font-weight: 600;
+          font-weight: 500;
           margin-top: 0;
           margin-bottom: 0;
       }

@@ -608,8 +608,10 @@ h3 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse; }
+  .welcome__content h2 {
+    max-width: 350px; }
   .welcome__content .subheading {
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 0;
     margin-bottom: 0; }
   .welcome__content > p {
@@ -676,6 +678,56 @@ h3 {
     margin-right: 20px; }
   .welcome__content {
     width: 50%; } }
+
+/* ========================================
+   Services SECTION
+  ========================================
+  */
+.services {
+  padding: 64px 0;
+  padding: 4rem 0; }
+  .services header {
+    text-align: center;
+    margin-bottom: 32px;
+    margin-bottom: 2rem; }
+  .services__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .services__col {
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 200px;
+            flex: 1 200px;
+    margin-right: 20px; }
+  .services__col img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px; }
+
+@media screen and (min-width: 928px) {
+  .services__col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 300px;
+            flex: 1 300px; } }
+
+@media screen and (min-width: 1008px) {
+  .services .col-1 img {
+    border-top-right-radius: 0; }
+  .services .col-2 img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .services .col-3 img {
+    border-top-left-radius: 0; }
+  .services .col-1-bottom img {
+    border-bottom-left-radius: 30px; }
+  .services .col-3-bottom img {
+    border-bottom-right-radius: 30px; }
+  .services .col-bottom img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; } }
 
 /* ========================================
      6. Page-specific Styles
