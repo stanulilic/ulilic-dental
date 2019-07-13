@@ -1,0 +1,57 @@
+/* ========================================
+    Header - navigation
+  ========================================
+  */
+
+.header {
+    padding-top: 32px;
+    position: relative;
+
+    &__logo {
+        a {
+            font-size: $font-size-h3; // 18px
+            text-decoration: none;
+            color: $gray_darker;
+
+        }
+        .icon-logo {
+            width:22px;
+            height: 25px;
+            vertical-align: middle;
+            margin-right: $spacing_level-1;
+        }
+    }
+
+    &__hamburger-icon {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 33px;
+        right: 20px;
+
+    }
+
+    &__navigation a {
+        display: block;
+        width: 100%;
+        color: $gray_base;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    &__navigation a:hover {
+        color: #000;
+    }
+
+    .mobile_actionbtn {
+        color: $color_white;
+    }
+
+    .mobile_actionbtn:hover {
+        color: $color_white;
+    }
+
+    .desktop_actionbtn {
+        display: none;
+    }
+}

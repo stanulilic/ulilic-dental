@@ -13,6 +13,10 @@ html {
     font-kerning: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 img {
     max-width: 100%;
@@ -20,6 +24,8 @@ img {
 
 ul {
     list-style: none;
+    padding: 0;
+
 }
 
 .wrapper {
@@ -36,4 +42,17 @@ ul {
 .icon-user-md, .icon-group {
     width: 40px;
     height: 40px;
+}
+
+.hide {
+    height: 0;
+    overflow: hidden;
+    transition: height .7s ease;
+}
+
+
+
+.show {
+    height: 350px;
+    transition: height .7s ease;
 }
