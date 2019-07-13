@@ -357,6 +357,9 @@ ul {
   width: 40px;
   height: 40px; }
 
+.hide_element {
+  display: none; }
+
 .hide {
   height: 0;
   overflow: hidden;
@@ -486,12 +489,13 @@ h3 {
     height: 25px;
     vertical-align: middle;
     margin-right: 4px; }
-  .header__hamburger-icon {
+  .header .header__hamburger-icon, .header .header__close-icon {
     width: 26px;
     height: 26px;
     position: absolute;
     top: 33px;
-    right: 20px; }
+    right: 20px;
+    fill: #374044; }
   .header__navigation a {
     display: block;
     width: 100%;
@@ -506,6 +510,43 @@ h3 {
     color: #fff; }
   .header .desktop_actionbtn {
     display: none; }
+
+@media screen and (min-width: 800px) {
+  .header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .header__hamburger-icon {
+    display: none !important; }
+  .header__navigation {
+    height: unset; }
+  .header__navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0; }
+  .header__navigation li {
+    margin-right: 1rem; }
+  .header__navigation a {
+    padding: 0; }
+  .header .mobile_actionbtn {
+    display: none; }
+  .header .desktop_actionbtn {
+    display: block; } }
+
+@media screen and (min-width: 1000px) {
+  .header__logo {
+    margin-right: 100px; }
+  .header__navigation {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; } }
 
 /* ========================================
      6. Page-specific Styles
