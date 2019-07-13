@@ -773,6 +773,67 @@ h3 {
             justify-content: space-between; } }
 
 /* ========================================
+   FOOTER SECTION
+  ========================================
+  */
+.footer {
+  background: #374044;
+  padding: 64px 0 16px 0;
+  padding: 4rem 0 1rem 0; }
+  .footer header {
+    text-align: center;
+    margin-bottom: 75px; }
+    .footer header h2 {
+      color: #e5e5e5; }
+  .footer h3 {
+    color: #e5e5e5; }
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .footer nav a {
+      color: #798c94; }
+    .footer nav a:hover {
+      color: #e5e5e5; }
+    .footer nav .icon {
+      width: 20px;
+      height: 20px;
+      fill: #798c94; }
+    .footer nav .icon:hover {
+      fill: #e5e5e5; }
+  .footer .copyright {
+    text-align: center;
+    margin-top: 72px; }
+
+@media screen and (min-width: 500px) {
+  .footer span {
+    display: block; } }
+
+@media screen and (min-width: 800px) {
+  .footer__content .split_footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__content .left-footer {
+    margin-right: 150px; } }
+
+/* ========================================
      6. Page-specific Styles
   ========================================
   */
