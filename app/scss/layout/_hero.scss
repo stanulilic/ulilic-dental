@@ -1,0 +1,50 @@
+/* ========================================
+   Hero Area
+  ========================================
+  */
+
+  .hero {
+      .wrapper {
+          padding-top: 4rem;
+      }
+
+      &__content {
+          margin-bottom: 4rem;
+      }
+      &__content h1 {
+         margin-bottom:  1.25rem;
+      }
+
+      &__content p {
+          margin-top: 0;
+          margin-bottom: 3rem;
+          max-width: 500px;
+      }
+  }
+
+
+  @media screen and (min-width: 380px) {
+      .hero {
+      &__content span{
+         display: block; 
+      }
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+      .hero {
+          .wrapper {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
+      }
+  }
+  @media screen and (min-width: 850px) {
+      .hero{
+      &__content h1 {
+          font-size: $font-size-h1;
+          line-height: 1.3;
+      }
+    }
+  }

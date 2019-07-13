@@ -1,0 +1,115 @@
+
+/* ========================================
+    Navigation
+  ========================================
+  */
+
+.header {
+    padding-top: 32px;
+    position: relative;
+
+    &__logo {
+        a {
+            font-size: $font-size-h3; // 18px
+            text-decoration: none;
+            color: $gray_darker;
+
+        }
+        .icon-logo {
+            width:22px;
+            height: 25px;
+            vertical-align: middle;
+            margin-right: $spacing_level-1;
+        }
+    }
+
+    %hamburger-icon {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 33px;
+        right: 20px;
+        fill: $gray_darker;
+
+    }
+    &__hamburger-icon {
+        @extend %hamburger-icon
+    }
+    &__close-icon{
+        @extend %hamburger-icon
+    }
+
+    &__navigation a {
+        display: block;
+        width: 100%;
+        color: $gray_base;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    &__navigation a:hover {
+        color: #000;
+    }
+
+    .mobile_actionbtn {
+        color: $color_white;
+    }
+
+    .mobile_actionbtn:hover {
+        color: $color_white;
+    }
+
+    .desktop_actionbtn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .header {
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+     &__hamburger-icon {
+         display: none !important; // to overline javascript inline styles
+     }
+
+     &__navigation {
+         height: unset;
+     }
+     &__navigation ul {
+         display: flex;
+         margin: 0;
+     }
+
+     &__navigation li {
+         margin-right: 1rem;
+     }
+
+    &__navigation a {
+        padding: 0;
+    }
+
+
+     .mobile_actionbtn {
+         display: none;
+     }
+
+     .desktop_actionbtn{
+         display: block;
+     }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header {
+        &__logo {
+            margin-right: 100px;
+        }
+
+        &__navigation {
+            flex-grow: 1;
+        }
+    }
+}
