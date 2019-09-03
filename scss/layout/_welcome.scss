@@ -1,0 +1,112 @@
+
+/* ========================================
+   WELCOME SECTION
+  ========================================
+  */
+
+  .welcome {
+      padding: 4rem 0;
+      background: $gray-light;
+      .wrapper {
+          display: flex;
+          flex-direction: column-reverse;
+      }
+
+      &__content h2 {
+          max-width: 350px;
+      }
+
+      &__content .subheading {
+          font-weight: 500;
+          margin-top: 0;
+          margin-bottom: 0;
+      }
+      &__content > p {
+          color: $gray_darker;
+          margin-top: $spacing_level-1;
+      }
+
+      .summary_col {
+          background: $gray_darker;
+          padding: 16px 25px;
+          border-top-left-radius: 30px;
+          border-top-right-radius: 30px;
+          display: flex;
+          align-items: center;
+          max-width: 228px;
+          margin-bottom: $base_spacing;
+          color: $gray-light;
+
+          .icon_wrap {
+              margin-right: $base_spacing;
+          }
+
+
+          .icon {
+              fill: $gray-light;
+              vertical-align: middle;
+          }
+
+      }
+
+      .summary_col p {
+          margin: 0;
+      }
+
+
+      .summary_col span {
+          display: block;
+          font-size: $font-size-h2-small;
+          font-weight: 700;
+          margin-bottom: -10px;
+      }
+
+  }
+
+  @media screen and (min-width: 500px) {
+      .welcome {
+          &__achievements {
+              display: flex;
+          }
+         .summary_col {
+            margin-right: $base_spacing;
+         }
+      }
+  }
+
+  @media screen and (min-width: 700px) {
+      .welcome {
+          .wrapper {
+              flex-direction: row;
+              align-items: center;
+          }
+          .summary_col_left{
+              border-top-right-radius: 0;
+          }
+
+          .summary_col_right {
+              border-top-left-radius: 0;
+          }
+          &__image {
+              width: 40%;
+              margin-right: $base_spacing;
+          }
+
+          &__content {
+              width: 60%;
+          }
+      }
+  }
+
+  @media screen and (min-width: 900px) {
+      .welcome {
+          &__image {
+              width: 50%;
+              margin-right: $base_spacing;
+          }
+
+          &__content {
+              width: 50%;
+          }
+      }
+  }
