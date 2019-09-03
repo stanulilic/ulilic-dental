@@ -1,0 +1,18 @@
+.action_btn {
+    border-radius: 32px;
+    padding: 10px 30px;
+    display: inline-block;
+    color: $color_white;
+    text-align: center;
+    background: $brand_color;
+    transition: all 0.3s linear;
+}
+
+.action_btn:hover {
+    background: hsl(209, 92%, 55%);
+}
+
+.action_btn-small {
+    padding: 5px 25px;
+}
+

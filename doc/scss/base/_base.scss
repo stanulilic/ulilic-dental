@@ -1,0 +1,62 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: inherit;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-kerning: auto;
+    font-kerning: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.contactinfo__icon, .footer-icon{
+    width: 16px;
+    height: 16px;
+}
+
+.icon-user-md, .icon-group {
+    width: 40px;
+    height: 40px;
+}
+
+.hide_element {
+display: none;
+}
+
+.hide {
+    height: 0;
+    overflow: hidden;
+    transition: height .7s ease;
+}
+
+
+
+.show {
+    height: 350px;
+    transition: height .7s ease;
+}

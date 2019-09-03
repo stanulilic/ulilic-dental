@@ -1,0 +1,60 @@
+@charset 'UTF-8';
+
+
+/* ========================================
+     1. Configration and Helpers
+  ========================================
+  */
+  @import
+    'abstracts/variables',
+    'abstracts/functions',
+    'abstracts/mixins';
+
+
+/* ========================================
+     2. Vendors
+  ========================================
+  */
+  @import 
+    'vendors/normalize';
+
+
+/* ========================================
+     3. Base Stuff
+  ========================================
+  */
+  @import
+    'base/base',
+    'base/typography',
+    'base/helpers';
+
+
+/* ========================================
+     4. Components
+  ========================================
+  */
+  @import 
+    'components/buttons';
+
+
+/* ========================================
+     5. Layout-related Sections
+  ========================================
+  */
+  @import
+    'layout/top_header',
+    'layout/navigation',
+    'layout/hero',
+    'layout/welcome',
+    'layout/services',
+    'layout/testimonials',
+    'layout/footer';
+
+
+
+/* ========================================
+     6. Page-specific Styles
+  ========================================
+  */
+  @import 
+    'pages/home';
